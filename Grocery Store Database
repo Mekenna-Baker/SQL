@@ -1,0 +1,30 @@
+--Create a grocery store database
+
+CREATE TABLE groceries (id INTEGER PRIMARY KEY, item TEXT, section TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO groceries VALUES (1, "apples", "produce", 4.17, 6);
+INSERT INTO groceries VALUES (2, "blueberries", "produce", 5.38, 1);
+INSERT INTO groceries VALUES (3, "bananas", "produce", 0.72, 5);
+INSERT INTO groceries VALUES (4, "Jalapenos", "produce", 0.31, 3); 
+INSERT INTO groceries VALUES (5, "ReesesPuffs", "pantry", 4.78, 1);
+INSERT INTO groceries VALUES (6, "Coffee", "pantry", 26.72, 1);
+INSERT INTO groceries VALUES (7, "Bread", "pantry", 3.68, 1);
+INSERT INTO groceries VALUES (8, "Eggs", "Fridge", 3.88, 18);
+INSERT INTO groceries VALUES (9, "Milk", "Fridge", 4.14, 1);
+INSERT INTO groceries VALUES (10, "Creamer", "Fridge", 3.77, 1);
+INSERT INTO groceries VALUES (11, "Beef", "meat", 3.96, 1);
+INSERT INTO groceries VALUES (12, "chicken", "meat", 14.32, 1);
+INSERT INTO groceries VALUES (13, "bacon", "meat", 3.72, 1); 
+INSERT INTO groceries VALUES (14, "Chips", "snacks", 5.38, 2);
+INSERT INTO groceries VALUES (15, "Fruit Snacks", "snacks", 8.26, 1);
+
+
+--display the database ordered by price
+
+SELECT * FROM groceries
+ORDER BY price desc;
+
+--What is the sum of the items in the database?
+
+SELECT SUM(price)
+FROM groceries
