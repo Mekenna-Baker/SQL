@@ -1,9 +1,0 @@
---Create a Book List Database
-
-CREATE TABLE books (id integer primary key, name text, rating integer);
-
-INSERT INTO books VALUES
-(1, 'Name of the Wind', 5),
-(2, 'Wise Mans Fear' , 4),
-(3, 'Rumble', 3)
-;
